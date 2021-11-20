@@ -18,9 +18,9 @@ OR
 
 to run the containers in a detached mode.
 
-Now you are ready to create a new project. `CD` into the `src`folder and run the following: 
+Now you are ready to create a new project.  Run the following: 
 
-    docker-compose run --rm composer create-project laravel/laravel .
+    docker-compose run --rm composer create-project laravel/laravel src
 
 After laravel has completed installing, update your .env file to match the environment variables in the docker-compose.yml mysql service
 
