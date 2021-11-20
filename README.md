@@ -18,9 +18,11 @@ OR
 
 to run the containers in a detached mode.
 
-Now you are ready to create a new project. `CD` into the `src`folder and run the following: 
+Now you are ready to create a new project.  Run the following: 
 
-    docker-compose run --rm composer create-project laravel/laravel .
+    docker-compose run --rm composer create-project laravel/laravel src
+    
+If you get a permission denied error on the src folder while running the above command. Run `sudo chown ${USER}:${USER} src` ... or replace the user/group with your prefered user and group
 
 After laravel has completed installing, update your .env file to match the environment variables in the docker-compose.yml mysql service
 
